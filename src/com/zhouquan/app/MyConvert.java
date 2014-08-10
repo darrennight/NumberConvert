@@ -171,7 +171,7 @@ public class MyConvert{
 					i=result.length();
 					break;
 				default:
-				break;
+					break;
 					
 				}
 			} 
