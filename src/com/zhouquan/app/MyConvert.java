@@ -1,5 +1,5 @@
 /**
- * Demo.java V1.0 2014-8-8 ÏÂÎç9:13:37
+ * Demo.java V1.0 2014-8-8 ä¸‹åˆ9:13:37
  *
  * Copyright Talkweb Information System Co. ,Ltd. All rights reserved.
  *
@@ -11,9 +11,9 @@ package com.zhouquan.app;
 public class MyConvert{
 
 	public static String convert(int money){
-		//£º¡°Ò¼¡¢·¡¡¢Èş¡¢ËÁ¡¢Îé¡¢Â½¡¢Æâ¡¢°Æ¡¢¾Á¡¢Ê°¡¢°Û¡¢Çª¡¢Èf
-		char[] ch1 = new char[]{'Áã','Ò¼','·¡','Èş','ËÁ','Îé','Â½','Æâ','°Æ'};
-		char[] ch2 = new char[]{'Ôª','Ê°','°Û','Çª','Èf','Ê°','°Û','Çª','ÒÚ','Ê°','°Û','Çª'};
+		//ï¼šâ€œå£¹ã€è´°ã€åã€è‚†ã€ä¼ã€é™†ã€æŸ’ã€æŒã€ç–ã€æ‹¾ã€ä½°ã€ä»Ÿã€è¬
+		char[] ch1 = new char[]{'é›¶','å£¹','è´°','å','è‚†','ä¼','é™†','æŸ’','æŒ'};
+		char[] ch2 = new char[]{'å…ƒ','æ‹¾','ä½°','ä»Ÿ','è¬','æ‹¾','ä½°','ä»Ÿ','äº¿','æ‹¾','ä½°','ä»Ÿ'};
 		
 		int index = 0;
 		int weight = 0;
@@ -23,11 +23,11 @@ public class MyConvert{
 		sb.append(ch2[0]);
 		while(count!=0){
 			index = count % 10;
-			//µÚÒ»´Î²»ĞèÌí¼Óµ¥Î»
+			//ç¬¬ä¸€æ¬¡ä¸éœ€æ·»åŠ å•ä½
 			if(index != 0 && weight !=0){
-				sb.append(ch2[weight]);  //Ìí¼Óµ¥Î»
+				sb.append(ch2[weight]);  //æ·»åŠ å•ä½
 			}
-			sb.append(ch1[index]);  //Íê³ÉÊı×Öµ½×Ö·ûµÄ×ª»»
+			sb.append(ch1[index]);  //å®Œæˆæ•°å­—åˆ°å­—ç¬¦çš„è½¬æ¢
 			count = count / 10;
 			weight++;
 		}
@@ -40,20 +40,20 @@ public class MyConvert{
 	
 	
 			/**
-			* ¹¦ÄÜÃèÊö£º
+			* åŠŸèƒ½æè¿°ï¼š
 			*
-			* ´´½¨ÈË£ºZHOUQUAN 
-			* <p>´´½¨ÈÕÆÚ £º2014-8-9 ÏÂÎç7:06:52</p>
+			* åˆ›å»ºäººï¼šZHOUQUAN 
+			* <p>åˆ›å»ºæ—¥æœŸ ï¼š2014-8-9 ä¸‹åˆ7:06:52</p>
 			*
 			* @param money
 			* @return
 			*
-			* <p>ĞŞ¸ÄÀúÊ· £º(ĞŞ¸ÄÈË£¬ĞŞ¸ÄÊ±¼ä£¬ĞŞ¸ÄÔ­Òò/ÄÚÈİ)</p>
+			* <p>ä¿®æ”¹å†å² ï¼š(ä¿®æ”¹äººï¼Œä¿®æ”¹æ—¶é—´ï¼Œä¿®æ”¹åŸå› /å†…å®¹)</p>
 			*/
 	public static String convert2(int money){
-		//£º¡°Ò¼¡¢·¡¡¢Èş¡¢ËÁ¡¢Îé¡¢Â½¡¢Æâ¡¢°Æ¡¢¾Á¡¢Ê°¡¢°Û¡¢Çª¡¢Èf
-		char[] ch1 = new char[]{'Áã','Ò¼','·¡','Èş','ËÁ','Îé','Â½','Æâ','°Æ'};
-		char[] ch2 = new char[]{'Ôª','Ê°','°Û','Çª','Èf','Ê°','°Û','Çª','ÒÚ','Ê°','°Û','Çª'};
+		//ï¼šâ€œå£¹ã€è´°ã€åã€è‚†ã€ä¼ã€é™†ã€æŸ’ã€æŒã€ç–ã€æ‹¾ã€ä½°ã€ä»Ÿã€è¬
+		char[] ch1 = new char[]{'é›¶','å£¹','è´°','å','è‚†','ä¼','é™†','æŸ’','æŒ'};
+		char[] ch2 = new char[]{'å…ƒ','æ‹¾','ä½°','ä»Ÿ','è¬','æ‹¾','ä½°','ä»Ÿ','äº¿','æ‹¾','ä½°','ä»Ÿ'};
 		
 		int index = 0;
 		int weight = 0;
@@ -62,46 +62,46 @@ public class MyConvert{
 		StringBuffer sb = new StringBuffer();
 		while(count!=0){
 			index = count % 10;
-			sb.append(ch2[weight]);  //Ìí¼Óµ¥Î»
-			sb.append(ch1[index]);  //Íê³ÉÊı×Öµ½×Ö·ûµÄ×ª»»
+			sb.append(ch2[weight]);  //æ·»åŠ å•ä½
+			sb.append(ch1[index]);  //å®Œæˆæ•°å­—åˆ°å­—ç¬¦çš„è½¬æ¢
 			count = count / 10;
 			weight++;
 		}
 		
-		//¶Ô×Ö·û´®½øĞĞ´¦Àí£¬Ê¹Ö®·ûºÏÈËµÄÏ°¹ß
+		//å¯¹å­—ç¬¦ä¸²è¿›è¡Œå¤„ç†ï¼Œä½¿ä¹‹ç¬¦åˆäººçš„ä¹ æƒ¯
 		StringBuffer result = new StringBuffer();
 		result = sb.reverse();
 		int i = 0;
 		while(i < result.length()){
-			int j = i + result.substring(i).indexOf('Áã');
+			int j = i + result.substring(i).indexOf('é›¶');
 			if(j<i)
 				break;
 			else{
-				//´Ë´¦ÓÃswitchÓï¾ä´úÌæÌõ¼şÓï¾ä£¬Ê¹´úÂëµÄ½á¹¹¸ü¼ÓµÄÇåÎú
+				//æ­¤å¤„ç”¨switchè¯­å¥ä»£æ›¿æ¡ä»¶è¯­å¥ï¼Œä½¿ä»£ç çš„ç»“æ„æ›´åŠ çš„æ¸…æ™°
 				char nextch = result.charAt(j+1);
 				switch(nextch)
 				{
-				case 'Ê°':
-				case '°Û':
-				case 'Çª':
-					if(result.charAt(j+2)!='Áã'){
-						result.deleteCharAt(j+1);//É¾³ıµ¥Î»
-						i=j+1; //Ö¸ÕëÏòÇ°ÒÆÒ»Î»
+				case 'æ‹¾':
+				case 'ä½°':
+				case 'ä»Ÿ':
+					if(result.charAt(j+2)!='é›¶'){
+						result.deleteCharAt(j+1);//åˆ é™¤å•ä½
+						i=j+1; //æŒ‡é’ˆå‘å‰ç§»ä¸€ä½
 					}else{
-						result.delete(j, j+2); //É¾³ıÁãºÍµ¥Î»
-						i=j; //Ö¸Õë²»±ä
+						result.delete(j, j+2); //åˆ é™¤é›¶å’Œå•ä½
+						i=j; //æŒ‡é’ˆä¸å˜
 					}
 					break;
-				case 'Èf':
-					if(result.charAt(j-1)!='ÒÚ'){
-						result.deleteCharAt(j);  //É¾³ıÁã
+				case 'è¬':
+					if(result.charAt(j-1)!='äº¿'){
+						result.deleteCharAt(j);  //åˆ é™¤é›¶
 						i=j+1;
 					}else{
-						result.delete(j, j+2);//É¾³ıÁãºÍµ¥Î»
+						result.delete(j, j+2);//åˆ é™¤é›¶å’Œå•ä½
 						i=j;
 					}
 					break;
-				case 'Ôª':
+				case 'å…ƒ':
 					result.deleteCharAt(j); 
 					break;
 				}
@@ -111,63 +111,63 @@ public class MyConvert{
 	}
 	
 	public static String convert3(double money){
-		//£º¡°Ò¼¡¢·¡¡¢Èş¡¢ËÁ¡¢Îé¡¢Â½¡¢Æâ¡¢°Æ¡¢¾Á¡¢Ê°¡¢°Û¡¢Çª¡¢Èf
-		char[] ch1 = new char[]{'Áã','Ò¼','·¡','Èş','ËÁ','Îé','Â½','Æâ','°Æ'};
-		char[] ch2 = new char[]{'·Ö','½Ç','Ôª','Ê°','°Û','Çª','Èf','Ê°','°Û','Çª','ÒÚ','Ê°','°Û','Çª'};
+		//ï¼šâ€œå£¹ã€è´°ã€åã€è‚†ã€ä¼ã€é™†ã€æŸ’ã€æŒã€ç–ã€æ‹¾ã€ä½°ã€ä»Ÿã€è¬
+		char[] ch1 = new char[]{'é›¶','å£¹','è´°','å','è‚†','ä¼','é™†','æŸ’','æŒ'};
+		char[] ch2 = new char[]{'åˆ†','è§’','å…ƒ','æ‹¾','ä½°','ä»Ÿ','è¬','æ‹¾','ä½°','ä»Ÿ','äº¿','æ‹¾','ä½°','ä»Ÿ'};
 		int index = 0;
 		int weight = 0;
 		int count = (int) (money*100);
 		StringBuffer sb = new StringBuffer();
 		while(count!=0){
 			index = count % 10;
-			sb.append(ch2[weight]);  //Ìí¼Óµ¥Î»
-			sb.append(ch1[index]);  //Íê³ÉÊı×Öµ½×Ö·ûµÄ×ª»»
+			sb.append(ch2[weight]);  //æ·»åŠ å•ä½
+			sb.append(ch1[index]);  //å®Œæˆæ•°å­—åˆ°å­—ç¬¦çš„è½¬æ¢
 			count = count / 10;
 			weight++;
 		}
 		
-		//¶Ô×Ö·û´®½øĞĞ´¦Àí£¬Ê¹Ö®·ûºÏÈËµÄÏ°¹ß
+		//å¯¹å­—ç¬¦ä¸²è¿›è¡Œå¤„ç†ï¼Œä½¿ä¹‹ç¬¦åˆäººçš„ä¹ æƒ¯
 		StringBuffer result = new StringBuffer();
 		result = sb.reverse();
 		int i = 0;
 		while(i < result.length()){
-			int j = i + result.substring(i).indexOf('Áã');
+			int j = i + result.substring(i).indexOf('é›¶');
 			if(j<i)
-				break;  //ËµÃ÷²»´æÔÚÁãÕâ¸öÌØÊâÇé¿ö
+				break;  //è¯´æ˜ä¸å­˜åœ¨é›¶è¿™ä¸ªç‰¹æ®Šæƒ…å†µ
 			else{
 				char nextch = result.charAt(j+1);
 				switch(nextch)
 				{
-				case 'Ê°':
-				case '°Û':
-				case 'Çª':
-					if(result.charAt(j+2)!='Áã'){
-						result.deleteCharAt(j+1);//É¾³ıµ¥Î»
+				case 'æ‹¾':
+				case 'ä½°':
+				case 'ä»Ÿ':
+					if(result.charAt(j+2)!='é›¶'){
+						result.deleteCharAt(j+1);//åˆ é™¤å•ä½
 						i=j+1;
 					}else{
-						result.delete(j, j+2); //É¾³ıÁãºÍµ¥Î»
+						result.delete(j, j+2); //åˆ é™¤é›¶å’Œå•ä½
 						i=j;
 					}
 					break;
-				case 'Èf':
-					if(result.charAt(j-1)!='ÒÚ'){
-						result.deleteCharAt(j);  //É¾³ıÁã
+				case 'è¬':
+					if(result.charAt(j-1)!='äº¿'){
+						result.deleteCharAt(j);  //åˆ é™¤é›¶
 						i=j+1;
 					}else{
-						result.delete(j, j+2);//É¾³ıÁãºÍµ¥Î»
+						result.delete(j, j+2);//åˆ é™¤é›¶å’Œå•ä½
 						i=j;
 					}
 					break;
-				case 'Ôª':
+				case 'å…ƒ':
 					result.deleteCharAt(j); 
 					break;
-				case '½Ç':
-					result.deleteCharAt(j+1);//É¾³ıµ¥Î»
+				case 'è§’':
+					result.deleteCharAt(j+1);//åˆ é™¤å•ä½
 					i=j+1;
 					break;
-				case '·Ö':
-					if(result.charAt(j-1)!='½Ç')
-						result.append('Õû');
+				case 'åˆ†':
+					if(result.charAt(j-1)!='è§’')
+						result.append('æ•´');
 					i=result.length();
 					break;
 				default:
@@ -180,10 +180,10 @@ public class MyConvert{
 	}
 	
 	public static String convert4(double money){
-		//£º¡°Ò¼¡¢·¡¡¢Èş¡¢ËÁ¡¢Îé¡¢Â½¡¢Æâ¡¢°Æ¡¢¾Á¡¢Ê°¡¢°Û¡¢Çª¡¢Èf
-		char[] ch1 = new char[]{'Áã','Ò¼','·¡','Èş','ËÁ','Îé','Â½','Æâ','°Æ'};
-		char[] ch2 = new char[]{'·Ö','½Ç','Ôª','Ê°','°Û','Çª','Èf','Ê°','°Û','Çª',
-								'ÒÚ','Ê°','°Û','Çª','Èf','Ê°','°Û','Çª','ÒÚ'};
+		//ï¼šâ€œå£¹ã€è´°ã€åã€è‚†ã€ä¼ã€é™†ã€æŸ’ã€æŒã€ç–ã€æ‹¾ã€ä½°ã€ä»Ÿã€è¬
+		char[] ch1 = new char[]{'é›¶','å£¹','è´°','å','è‚†','ä¼','é™†','æŸ’','æŒ'};
+		char[] ch2 = new char[]{'åˆ†','è§’','å…ƒ','æ‹¾','ä½°','ä»Ÿ','è¬','æ‹¾','ä½°','ä»Ÿ',
+								'äº¿','æ‹¾','ä½°','ä»Ÿ','è¬','æ‹¾','ä½°','ä»Ÿ','äº¿'};
 		int index = 0;
 		int weight = 0;
 		long count = (long) (money*100);
@@ -191,64 +191,66 @@ public class MyConvert{
 		while(count!=0){
 			index = (int) (count % 10);
 //			System.out.println(index);
-			sb.append(ch2[weight]);  //Ìí¼Óµ¥Î»
-			sb.append(ch1[index]);  //Íê³ÉÊı×Öµ½×Ö·ûµÄ×ª»»
+			sb.append(ch2[weight]);  //æ·»åŠ å•ä½
+			sb.append(ch1[index]);  //å®Œæˆæ•°å­—åˆ°å­—ç¬¦çš„è½¬æ¢
 			count = count / 10;
 			weight++;
 		}
 		
-		//¶Ô×Ö·û´®½øĞĞ´¦Àí£¬Ê¹Ö®·ûºÏÈËµÄÏ°¹ß
+		//å¯¹å­—ç¬¦ä¸²è¿›è¡Œå¤„ç†ï¼Œä½¿ä¹‹ç¬¦åˆäººçš„ä¹ æƒ¯
 		StringBuffer result = new StringBuffer();
 		result = sb.reverse();
 		//2000 0000 0401.0012
 //		System.out.println(result.toString());
 		int i = 0;
 		while(i < result.length()){
-			int j = i + result.substring(i).indexOf('Áã');
+			int j = i + result.substring(i).indexOf('é›¶');
 			if(j<i)
-				break;  //ËµÃ÷²»´æÔÚÁãÕâ¸öÌØÊâÇé¿ö
+				break;  //è¯´æ˜ä¸å­˜åœ¨é›¶è¿™ä¸ªç‰¹æ®Šæƒ…å†µ
 			else{
 				char nextch = result.charAt(j+1);
 				switch(nextch)
 				{
-				case 'Ê°':
-				case '°Û':
-				case 'Çª':
-					if(result.charAt(j+2)!='Áã'){
-						result.deleteCharAt(j+1);//É¾³ıµ¥Î»
+				case 'æ‹¾':
+				case 'ä½°':
+				case 'ä»Ÿ':
+					if(result.charAt(j+2)!='é›¶'){
+						result.deleteCharAt(j+1);//åˆ é™¤å•ä½
 						i=j+1;
 					}else{
-						result.delete(j, j+2); //É¾³ıÁãºÍµ¥Î»
+						result.delete(j, j+2); //åˆ é™¤é›¶å’Œå•ä½
 						i=j;
 					}
 					break;
-				case 'Èf':
-					if(result.charAt(j-1)!='ÒÚ'){
-						result.deleteCharAt(j);  //É¾³ıÁã
+				case 'è¬':
+					if(result.charAt(j-1)!='äº¿'){
+						result.deleteCharAt(j);  //åˆ é™¤é›¶
 						i=j+1;
 					}else{
-						result.delete(j, j+2);//É¾³ıÁãºÍµ¥Î»
+						result.delete(j, j+2);//åˆ é™¤é›¶å’Œå•ä½
 						i=j;
 					}
 					break;
-				case 'ÒÚ':
-						result.deleteCharAt(j);  //É¾³ıÁã
+				case 'äº¿':
+						result.deleteCharAt(j);  //åˆ é™¤é›¶
 						i=j+1;
 					break;
-				case 'Ôª':
+				case 'å…ƒ':
 					result.deleteCharAt(j); 
 					break;
-				case '½Ç':
-					result.deleteCharAt(j+1);//É¾³ıµ¥Î»
+				case 'è§’':
+					result.deleteCharAt(j+1);//åˆ é™¤å•ä½
 					i=j+1;
 					break;
-				case '·Ö':
-					if(result.charAt(j-1)!='½Ç'){
+				case 'åˆ†':
+					if(result.charAt(j-1)!='è§’'){
 						result.delete(j-1, j+2);
-						result.append('Õû');
+						result.append('æ•´');
 					}
 					i=result.length();
 					break;
+				default:
+				 break;
 					
 				}
 			} 
@@ -267,13 +269,13 @@ public class MyConvert{
 		for(int i = 0;i<test2.length;i++){
 //			str1 = Demo1234.convert(test[i]);
 //			str2 = Demo1234.convert2(test[i]);
-////			System.out.println("µÚ" + i + "¸öÊı" + test[i] + str1);
-//			System.out.println("µÚ" + i + "¸öÊı" + test[i] +str2);
+////			System.out.println("ç¬¬" + i + "ä¸ªæ•°" + test[i] + str1);
+//			System.out.println("ç¬¬" + i + "ä¸ªæ•°" + test[i] +str2);
 			
 //			str3 = Demo1234.convert4(40000000000000000.1244);
-//			System.out.println("µÚ" + i + "¸öÊı" + test2[i] +str3);
+//			System.out.println("ç¬¬" + i + "ä¸ªæ•°" + test2[i] +str3);
 		}
-		//×¢Òâjava longµÄ×î´óÊı¾İÎª922 3372 0368 5477 5808£¬µ«´Ë´¦È´³¬³öÁËdoubleÀàĞÍ±íÊ¾µÄ·¶Î§
+		//æ³¨æ„java longçš„æœ€å¤§æ•°æ®ä¸º922 3372 0368 5477 5808ï¼Œä½†æ­¤å¤„å´è¶…å‡ºäº†doubleç±»å‹è¡¨ç¤ºçš„èŒƒå›´
 		str3 = MyConvert.convert4(40000000000000000.1244);
 		System.out.println(str3);
 		System.out.println();
@@ -282,21 +284,21 @@ public class MyConvert{
 }
 
 
-/*if(nextch == 'Ê°' || nextch == '°Û' || nextch == 'Çª'){
-if(result.charAt(j+2)!='Áã'){
-	result.deleteCharAt(j+1);//É¾³ıµ¥Î»
+/*if(nextch == 'æ‹¾' || nextch == 'ä½°' || nextch == 'ä»Ÿ'){
+if(result.charAt(j+2)!='é›¶'){
+	result.deleteCharAt(j+1);//åˆ é™¤å•ä½
 	i=j+1;
 }else{
-	result.delete(j, j+2); //É¾³ıÁãºÍµ¥Î»
+	result.delete(j, j+2); //åˆ é™¤é›¶å’Œå•ä½
 	i=j;
 }
 }else{
-if(nextch == 'Èf'){
-	if(result.charAt(j-1)!='ÒÚ'){
-		result.deleteCharAt(j);  //É¾³ıÁã
+if(nextch == 'è¬'){
+	if(result.charAt(j-1)!='äº¿'){
+		result.deleteCharAt(j);  //åˆ é™¤é›¶
 		i=j+1;
 	}else{
-		result.delete(j, j+2);//É¾³ıÁãºÍµ¥Î»
+		result.delete(j, j+2);//åˆ é™¤é›¶å’Œå•ä½
 		i=j;
 	}
 		
