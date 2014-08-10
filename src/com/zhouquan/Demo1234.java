@@ -274,6 +274,7 @@ public class Demo1234 {
 		//注意java long的最大数据为922 3372 0368 5477 5808，但此处却超出了double类型表示的范围
 		str3 = Demo1234.convert4(40000000000000000.1244);
 		System.out.println(str3);
+		System.out.println();
 	}
 	
 }
